@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifica Profilo Netflix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <header>
+    <nav class="navbar navbar-expand-lg bg-black navbar-black">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/netflix_logo.png" alt="Logo" width="150">
+        </a>
+    </nav>
+    </header>
+
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+      <form>
+        <div class="mb-3">
+          <h1 class="text-light">Edit Profile</h1>
+          <hr>
+          <div class="row">
+            <div class="col-md-3">
+              <a href="home.html">
+                <img class="mt-4" src="assets/avatar.png" width="80">
+              </a>
+              <label for="username" class="form-label text-light">Massimo Berlingeri</label>
+            </div>
+            <div class="col-md-9">
+              <div class="mb-3">
+                <label for="email" class="form-label text-light">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Nuova email">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label text-light">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Nuova password">
+              </div>
+              <div class="mb-3">
+                <label for="plan" class="form-label text-light">Piano di abbonamento</label>
+                <select class="form-select" id="plan">
+                  <option selected>Scegli il piano...</option>
+                  <option value="basic">Basic</option>
+                  <option value="standard">Standard</option>
+                  <option value="premium">Premium</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="newsletter">
+                <label class="form-check-label text-light" for="newsletter">Iscriviti alla newsletter</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacy">
+                <label class="form-check-label text-light" for="privacy">Accetto la politica sulla privacy</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms">
+                <label class="form-check-label text-light" for="terms">Accetto i termini e le condizioni</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary bg-dark border border-light">Salva modifiche</button>
+        <button type="submit" class="btn btn-primary bg-dark border border-light">Cencella</button> 
+        <button type="submit" class="btn btn-primary bg-dark border border-light">Elimina Profilo</button>
+      </form>
+    </div>
+          <hr>
+        </form>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
